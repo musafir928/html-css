@@ -16,6 +16,10 @@ h2 {
 }
 h3 {
   white-space: nowrap;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
 }
 body {
   background-color: rgb(102, 103, 105);
@@ -43,7 +47,7 @@ img {
   padding: 1%;
 }
 /* grid-float : ipad design */
-@media screen and (max-width: 1024px) and (min-width:621px) { 
+@media only screen and (max-width: 1024px) and (min-width:621px) { 
     #gird-floats {
       margin: auto;
     }
@@ -67,7 +71,7 @@ img {
     }
 }
 /* grid-float : phone */
-@media screen and (max-width: 620px) { 
+@media only screen and (max-width: 620px) { 
     #gird-floats {
       margin: auto;
     }
@@ -115,7 +119,7 @@ img {
   margin: 1%;
 }
 /* grid-float : ipad design */
-@media screen and (max-width: 1024px) and (min-width:621px) { 
+@media only screen and (max-width: 1024px) and (min-width:621px) { 
     #grid-flex .grid-item {
       height: 500px;
       width: 29%;
@@ -135,7 +139,7 @@ img {
     }
 }
 /* grid-float : phone */
-@media screen and (max-width: 620px) { 
+@media only screen and (max-width: 620px) { 
     #gird-flex {
       margin: auto;
     }
@@ -161,8 +165,20 @@ img {
   90% {background-color: black;}
   100% {background-color: rgb(102, 103, 105);}
 }
+@keyframes colorchange1 {
+  0%   {background-color: rgb(13, 77, 206);}
+  25%  {background-color: rgb(5, 48, 59);}
+  50%  {background-color: rgb(10, 240, 113);}
+  90% {background-color: rgb(218, 233, 14);}
+  100% {background-color: rgb(206, 50, 11);}
+}
   body {
   animation-name: colorchange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+#grid-flex .grid-item:first-child,#grid-floats .grid-item:first-child {
+  animation-name: colorchange1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
