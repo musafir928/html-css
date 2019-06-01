@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,h2 {
+  color:white;
+  margin: 10px;
+  font-size: 3em;
+  background-color: black;
+  padding: 20px;
+  border-radius: 25px 25px 0 0;
+}
+h2 {
+  display: block;
+  background-color: blue;
+}
+h3 {
+  white-space: nowrap;
+}
+body {
+  background-color: rgb(102, 103, 105);
+  text-align: center;
+}
+#grid-floats {
+  display: inline-block;
+  overflow: hidden;
+}
+#grid-floats .grid-item {
+  float: left;
+  height: 600px;
+  width: 21%;
+  overflow: hidden;
+  margin: 1%;
+  padding: 1%;
+  background-color: white;
+}
+img {
+  width:96%;
+}
+#grid-floats .grid-item:first-child {
+  width: 46%;
+  margin: 1%;
+  padding: 1%;
+}
+/* grid-float : ipad design */
+@media screen and (max-width: 1024px) and (min-width:621px) { 
+    #gird-floats {
+      margin: auto;
+    }
+    #grid-floats .grid-item {
+      float: left;
+      height: 500px;
+      width: 29%;
+      overflow: hidden;
+      padding: 1%;
+      margin: 1%;
+    } 
+    #grid-floats .grid-item:first-child {
+      width: 45.5%;
+      margin: 1%;
+      padding: 1%;
+    }
+    #grid-floats .grid-item:nth-child(2) {
+      width: 45.5%;
+      padding: 1%;
+      margin: 1%;
+    }
+}
+/* grid-float : phone */
+@media screen and (max-width: 620px) { 
+    #gird-floats {
+      margin: auto;
+    }
+    #grid-floats .grid-item {
+      float: left;
+      height: 350px;
+      width: 42%;
+      overflow: hidden;
+      padding: 2%;
+      margin: 2%;
+    } 
+    #grid-floats .grid-item:first-child {
+      width: 92%;
+      padding: 2%;
+      margin: 2%;
+    }
+}
+
+/* hover */
+#grid-floats .grid-item:hover,#grid-flex .grid-item:hover {
+  background-color: rgb(67, 221, 67);
+  box-shadow: 5px 5px 5px yellowgreen;
+  color: white;
+}
+
+/* secend prt : flex */
+/* pc screen */
+#grid-flex {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+#grid-flex .grid-item {
+  width: 21%;
+  overflow: hidden;
+  padding: 1%;
+  margin: 1%; 
+  background-color: white;
+}
+#grid-flex .grid-item:first-child {
+  width: 46%;
+  padding: 1%;
+  margin: 1%;
+}
+/* grid-float : ipad design */
+@media screen and (max-width: 1024px) and (min-width:621px) { 
+    #grid-flex .grid-item {
+      height: 500px;
+      width: 29%;
+      overflow: hidden;
+      padding: 1%;
+      margin: 1%;
+    } 
+    #grid-flex .grid-item:first-child {
+      width: 45.5%;
+      margin: 1%;
+      padding: 1%;
+    }
+    #grid-flex .grid-item:nth-child(2) {
+      width: 45.5%;
+      margin: 1%;
+      padding: 1%;
+    }
+}
+/* grid-float : phone */
+@media screen and (max-width: 620px) { 
+    #gird-flex {
+      margin: auto;
+    }
+    #grid-flex .grid-item {
+      float: left;
+      height: 300px;
+      width: 42%;
+      overflow: hidden;
+      padding: 2%;
+      margin: 2%;
+    } 
+    #grid-flex .grid-item:first-child {
+      width:92%;
+      padding: 2%;
+      margin: 2%;
+    }
+}
+/* keyframes  */
+@keyframes colorchange {
+  0%   {background-color: rgb(102, 103, 105);}
+  25%  {background-color: rgb(245, 245, 122);}
+  50%  {background-color: rgb(163, 163, 230);}
+  90% {background-color: black;}
+  100% {background-color: rgb(102, 103, 105);}
+}
+  body {
+  animation-name: colorchange;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
