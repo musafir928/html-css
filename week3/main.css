@@ -1,0 +1,302 @@
+/* global */
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+/* logo */
+.logo{
+    margin-left: 50%;
+    clear: both;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #01689B;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    box-sizing: border-box;
+    clear: left;
+    position: relative;
+}
+.navbar ul li a{
+    font-size: 0.8em;
+}
+.navbar a{
+    color:white;
+    font-family: sans-serif;
+}
+.home{
+    flex-grow:1;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.menu ul li{
+    padding: 10px 10px;
+    display: inline;
+}
+.nav-svg{
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+.slideout{
+    position: absolute;
+    right: 30px;
+    display: none;
+    top: 15px;
+}
+/* nav silde */
+.nav-slide{
+    width:96%;
+    margin: auto;
+    display: none;
+}
+.nav-slide ul li{
+    padding: 10px 0;
+    border-bottom: white solid 1px;
+}
+.sclose{
+    font-size: 2.5em;
+    position: inherit;
+    position: absolute;
+    right: 32px;
+    display: none;
+    top: 2px;
+    font-weight: 0;
+}
+.sclose a{
+    display: none;
+}
+/* search */
+.search{
+    position: absolute;
+    top: 110px;
+    right: 35px;
+    z-index: 3;
+    background-color: black;
+    height: 50px;
+    width: 35%;
+    display: flex;
+}
+.sbtn{
+    background-color: black;
+    color: white;
+    flex: 0 0 40px;
+    border:none;
+    font-size: 27px;
+}
+.searchfolder{
+   flex-grow: 1;
+}
+.picture1 img{
+width: 100%;
+box-sizing: border-box;
+height: 300px;
+}
+.picture1{
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.linkbar{
+    position: absolute;
+    top: 10px;
+    background-color: white;
+    width: 20%;
+    margin-left: 20px;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
+p{
+    margin:15px 0;
+}
+.linkbar span{
+    margin-right: 5px;
+}
+.nationale{
+    position: absolute;
+    left: 10px;
+    bottom: 0.5px;
+    color: white;
+}
+.underpic{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-flow: wrap;
+    padding: 40px;
+}
+.article{
+    width: calc(25% - 4*10px);
+    /* width: 25%; */
+    overflow:hidden;
+    margin:15px;
+    /* border: #01689B solid 1px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* veilig */
+.veilig{
+    border-top: #f3f3f3 1px solid;
+    padding: 20px 0;
+    margin: 50px 0;
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.veilig h1{
+    color: #01689B;
+}
+.veiligpic{
+    width: calc((100%/3)-3*20px);
+    margin: 10px;
+}
+.veiligpic img{
+width: 100%;
+}
+/* news */
+.news h1{
+    width: 100%;
+    clear: both;
+}
+.news{
+    border-top: #f3f3f3 1px solid;
+    padding: 20px;
+    flex-flow: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+}
+.news-content{
+    width: 29%;
+    padding: 1%;
+    margin: 1%;
+}
+.news h2{
+    margin-bottom: 10px;
+}
+h2.meernews{
+    margin: 30px;
+}
+.meer{
+    display: flex;
+    margin: 5%;
+    text-align: center;
+    width: 100%;
+}
+.vragen{
+    border: #999 solid 3px;
+    height: 189px;
+    width: 325px;
+    margin-right: 20px; 
+    flex-shrink: 1;
+}
+.vargen h1{
+    font-size: 3em;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    color: #01689B;
+}
+.vragen h2{
+    font-size: 31px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    color: black;
+}
+.vragen h3{
+    font-size: 40px;
+    font-family: "RO Sans",Calibri,Verdana,sans-serif;
+    color: #01689B;
+}
+h3.color{
+    color: purple;
+}
+/* blue */
+.blue{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: #01689B;
+    color: white;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.derij{
+    width: 60%;
+    margin: 5%;
+}
+.table{
+    display: flex;
+    width: 20%;
+    margin: 5%;
+}
+.table a{
+    color: white;
+}
+td,th{
+padding-bottom: 5px;
+}
+.last{
+    text-align: center;
+    margin: 40px;
+}
+.last ul li{
+   display: inline-block;
+  
+   margin: 0 20px;
+}
+.last li a{
+    border: blueviolet 1px solid;
+    padding: 5px;
+}
+@media (max-width:780px){
+    .menu{
+        display: none;
+    }
+    .slideout{
+        display: unset;
+    }
+    .search{
+        position: static;
+        width: 96%;
+        height: 50px;
+        margin: auto;
+    }
+    .blue{
+        flex-flow: wrap;
+        text-align: center;
+    }
+    .derij{
+        width: 100%;
+    }
+    .table{
+        width: 40%;
+    }
+    .news-content,.veiligpic{
+        width: 46%;
+        margin: 1%;
+        padding: 1%;
+        overflow: hidden;
+    }
+    .article{
+        display: block;
+        width: 100%;
+    }
+    .linkbar{
+        width: 80%;
+    }
+}
