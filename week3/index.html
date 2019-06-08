@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img data-fallback="/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-fallback-ro.svg"
+            src="https://www.rijksoverheid.nl/binaries/content/gallery/rijksoverheid/channel-afbeeldingen/logos/logo-ro.svg"
+            alt="Rijksoverheid" id="logotype">
+    </div>
+    <div class="navbar">
+        <span class="home"><a href="#">Home</a></span>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Actueel</a></li>
+                <li><a href="#">Onderwerpen</a></li>
+                <li><a href="#">Ministeries</a></li>
+                <li><a href="#">Regering</a></li>
+                <li><a href="#">Documenten</a></li>
+                <li><a href="#">Doe mee</a></li>
+            </ul>
+        </div>
+        <span class="slideout sopen" id="open" onclick="opensilde()">
+            <a href="#" id="bopen" class="bopen">
+                <p class="nav-svg"></p>
+                <p class="nav-svg"></p>
+                <p class="nav-svg"></p>
+            </a>
+        </span>
+        <span class="slideout sclose" id="close" onclick="closesilde()">
+            <a href="#" id="close-btn" class="bclose">
+                &times;
+            </a>
+        </span>
+        <div class="nav-slide" id="nav-slide">
+            <ul>
+                <li><a href="#">
+                        <p style="color: #01689B">t</p>
+                    </a></li>
+                <li><a href="#">Actueel</a></li>
+                <li><a href="#">Onderwerpen</a></li>
+                <li><a href="#">Ministeries</a></li>
+                <li><a href="#">Regering</a></li>
+                <li><a href="#">Documenten</a></li>
+                <li><a href="#">Doe mee</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" id="searchfolder" class="searchfolder" placeholder="Zoek" title="please inpur keyword">
+            <button id="sbtn" class="sbtn" type="submit" title="open google"><i class="fas fa-search"></i></button>
+        </div>
+        <!-- here for search -->
+    </div>
+    <div class="picture1"><img
+            src="https://www.rijksoverheid.nl/binaries/widescreen/content/gallery/rijksoverheid/attentie-afbeeldingen/onderwerpen/m/met-pensioen-gaan-hero.jpg"
+            alt="big picture">
+        <div class="linkbar">
+            <p>Veel bekeken</p>
+            <ul>
+                <li><span>&#10095;</span><a href="#">Principeakkoord: een toekomstbestendig pensioenstelsel</a></li>
+                <li><span>&#10095;</span><a href="#">Schoolvakanties</a></li>
+                <li><span>&#10095;</span><a href="#">Bereken uw huurverhoging per 1 juli 2019</a></li>
+                <li><span>&#10095;</span><a href="#">Bedragen minimumloon 2019</a></li>
+                <li><span>&#10095;</span><a href="#">Formulier reizen met minderjarige naar het buitenland</a></li>
+            </ul>
+        </div>
+        <p class="nationale">© Nationale Beeldbank</p>
+    </div>
+    <div class="underpic">
+        <section class="article">
+            <h1><a href="#">Belastingen, uitkeringen en toeslagen</a></h1>
+            <p>Bijstand, AOW, WW-uitkering, Inkomstenbelasting, Wajong ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Bouwen en wonen</a></h1>
+            <p>Huurwoning, Huurverhoging, Koopwoning, Energielabel, Bouwregelgeving...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Economie</a></h1>
+            <p>Ondernemen en innovatie, Overheidsfinanciën, Duurzame economie, Zelfstandigen zonder personeel ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Familie, zorg en gezondheid</a></h1>
+            <p>Zorgverzekering, Zorg en ondersteuning thuis, Scheiden of uit elkaar gaan ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Internationale samenwerking</a></h1>
+            <p>Europese Unie, Brexit, Mensenrechten, Handelsverdragen EU ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Klimaat, milieu en natuur</a></h1>
+            <p>Gaswinning in Groningen, Klimaatverandering, Duurzame energie, Dierenwelzijn ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Migratie en reizen</a></h1>
+            <p>Paspoort en identiteitskaart, Nederlandse nationaliteit, Reizen met kinderen ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Onderwijs</a></h1>
+            <p>Schoolvakanties, Eindexamens, Hoger onderwijs, Basisonderwijs, Werken in het onderwijs ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Overheid en democratie</a></h1>
+            <p>Privacy en persoonsgegevens, Gemeenten, Provincies, Koninklijk Huis ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Recht, veiligheid en defensie</a></h1>
+            <p>Identiteitsfraude, Terrorisme en nationale veiligheid, Ouderlijk gezag en voogdij ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Verkeer en vervoer</a></h1>
+            <p>Rijbewijs, Verkeersregels, Openbaar vervoer, Verkeersveiligheid, Bijzondere voertuigen ...</p>
+        </section>
+        <section class="article">
+            <h1><a href="#">Werk</a></h1>
+            <p>Zelfstandigen zonder personeel (zzp), Minimumloon, Ouderschapsverlof, Werktijden, Ontslag ...</p>
+        </section>
+    </div>
+    <!-- <p>&#10095;</p> -->
+    <div class="veilig">
+        <div class="veiligpic">
+            <div class="smallpic"><a href="#">
+                    <img src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/veilig-internetten-uitgelicht-1.jpg"
+                        alt="first picture"></a>
+            </div>
+            <h1><a href="#">&#x2197; Veilig internetten</a></h1>
+            <p>Eerst checken. Dan klikken! Bescherm jezelf tegen internetcriminaliteit.</p>
+        </div>
+        <div class="veiligpic">
+            <div class="smallpic"><a href="#">
+                    <img src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/uitgelicht-leven-lang-leren.jpg"
+                        alt="secend picture"></a>
+            </div>
+            <h1><a href="#">Persoonlijk ontwikkelbudget</a></h1>
+            <p>Iedereen kan straks een budget voor scholing en ontwikkeling aanvragen. </p>
+        </div>
+        <div class="veiligpic">
+            <div class="smallpic"><a href="#">
+                    <img src="https://www.rijksoverheid.nl/binaries/medium/content/gallery/rijksoverheid/banner-afbeeldingen/home/2019/electrisch_fietsen_1920x1280.jpg"
+                        alt="third picture"></a>
+            </div>
+            <h1><a href="#">Veilig fietsen</a></h1>
+            <p>Vanaf 1 juli 2019 is het verboden om te fietsen met je telefoon in je hand. </p>
+        </div>
+    </div>
+    <!-- news -->
+    <div class="news">
+        <h1>Nieuws</h1>
+        <section class="news-content veiligpic">
+            <h2><a href="#">Meer mogelijkheden ingrijpen bij slecht functioneren scholen</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>De overheid moet sneller en in meer gevallen kunnen ingrijpen wanneer een school ernstig onder de maat
+                presteert. Ook moet de ...</p>
+        </section>
+        <section class="news-content">
+            <h2><a href="#">Aantal kinderen op de kinderopvang verder gestegen</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>Het aantal kinderen dat naar de dagopvang en buitenschoolse opvang gaat is verder toegenomen. Dat blijkt
+                uit de eerste ...</p>
+        </section>
+        <section class="news-content">
+            <h2><a href="#">Kabinet maakt extra geld vrij voor Kinderombudsman</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>Het budget voor het instituut van de Kinderombudsman gaat vanaf dit jaar structureel omhoog. De
+                ministerraad heeft op voorstel ...</p>
+        </section>
+        <section class="news-content">
+            <h2><a href="#">Benoeming burgemeester Leeuwarden</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>De heer mr. S. (Sybrand) van Haersma Buma wordt de nieuwe burgemeester van Leeuwarden. De ministerraad
+                heeft op voorstel van ...</p>
+        </section>
+        <section class="news-content">
+            <h2><a href="#">Gemiddelde huurverhoging beperkt tot inflatie</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>Het gemiddelde aan huurverhogingen per woningcorporatie mag vanaf volgend jaar niet hoger zijn dan de
+                inflatie. Corporaties ...</p>
+        </section>
+        <section class="news-content">
+            <h2><a href="#">Subsidieregeling eerlijk, gezond en veilig werk geopend</a></h2>
+            <h5>07-06-2019 | 15:00</h5>
+            <p>Vandaag is de subsidieregeling Eerlijk, Gezond en Veilig werk van minister Koolmees van Sociale Zaken en
+                Werkgelegenheid in de ...
+            </p>
+        </section>
+    </div>
+    <div>
+        <h2 class="meernews">&#10095;<a href="#"> Meer nieuws</a></h2>
+    </div>
+    <div class="meer">
+        <a href="#">
+            <section class="vragen">
+                <h3>Vragen?</h3>
+                <h2>Bel Informatie<br> Rijksoverheid:</h2>
+                <h3>1400</h3>
+            </section>
+        </a>
+        <a href="#">
+            <section class="vragen">
+                <h2>Meld u aan voor de</h2><br>
+                <h3 class="color"> Nieuwsbrief <br> Regeringsnieuws</h3>
+            </section>
+        </a>
+    </div>
+    <div class="blue">
+        <div class="derij">
+            <h1>De Rijksoverheid. Voor Nederland</h1>
+        </div>
+        <div class="table">
+           <table>
+               <tr>
+                   <th><h2>Service</h2></th>
+               </tr>
+               <tr>
+                   <td><a href="#">Contact</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Abonneren</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">RSS</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Vacatures</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Sitemap</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Help</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Archief</a></td>
+               </tr>
+           </table>
+        </div>
+        <div class="table">
+           <table>
+               <tr>
+                   <th><h2>Over deze site</h2></th>
+               </tr>
+               <tr>
+                   <td><a href="#">Over Rijksoverheid.nl</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Wetten en regelingen</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Copyright</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Privacy</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Cookies</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Toegankelijkheid</a></td>
+               </tr>
+               <tr>
+                   <td><a href="#">Open data</a></td>
+               </tr>
+           </table>
+        </div>
+    </div>
+    <div class="last">
+            <ul>
+                <li><a href="#">Nederlands</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Turks</a></li>
+                <li><a href="#">Arabic</a></li>
+            </ul>
+         </div>
+
+    <script>
+        function opensilde() {
+            document.getElementById('nav-slide').style.display = 'unset';
+            document.getElementById('bopen').style.display = 'none';
+            document.getElementById('close-btn').style.display = 'unset';
+        }
+        function closesilde() {
+            document.getElementById('nav-slide').style.display = 'none';
+            document.getElementById('bopen').style.display = 'unset';
+            document.getElementById('close-btn').style.display = 'none';
+        }
+    </script>
+
+</body>
+
+</html>
